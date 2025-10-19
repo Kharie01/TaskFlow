@@ -1,0 +1,226 @@
+.text-editor{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 2rem;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:  space-between;
+    border-bottom: solid 1px #eeeeee;
+}
+
+.locator
+{   
+    display: flex;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: start;
+}
+
+section h2{
+    font-size: 4vh;
+    margin-bottom: 0.5rem;
+}
+
+section h4{
+    margin-top: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    font-size: 14px;
+    color: #c3c3c3;
+}
+
+section .tags{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+section span{
+    color: #3c3c3c;
+    margin-left: 10px;
+}
+
+section ul{
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+section li{
+    background-color: #e4e1e1;
+    font-size: 12px;
+    padding: 2px;
+}
+
+section button{
+    background-color: #e4e1e1;
+    color: #3c3c3c;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    padding: 3px;
+    gap: 10px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+button img{
+    width: 12px;
+}
+
+section button:hover {
+    background-color: #d1cfcf;
+}   
+
+nav{
+    display: flex;
+    border-bottom: solid 1px #eeeeee;
+    border-top: solid 1px #eeeeee;
+    margin-bottom: 1rem;
+}
+
+nav ul{
+    display: flex;
+    margin: 2px;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+nav li{
+    display: flex;
+    align-items: center;
+}
+
+nav .line{
+    border: solid 1px #f0eeee;
+    height: 20px;
+}
+
+nav .fontfamily{
+    gap: 1rem;
+}
+
+.editor{
+    border:none;
+    width: 100%;
+    height: 100%;
+    max-width: 78rem;
+    overflow: break-word;
+}
+
+nav select{
+    border: none;
+    font-size: 16px;
+}
+
+input{
+    border: none;
+    border-bottom: solid 2px #3c3c3c;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.option{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.option img{
+    z-index: 1;
+    cursor: pointer;
+}
+
+.popOver{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fbfbfb;
+    border: solid 1px #d1cfcf;
+
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popOver.show{
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.popOver h4{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+li button {
+    border: solid 1px #e4e1e1;
+    font-size: medium;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.popOver button, li button {
+    border: solid 1px #e4e1e1;
+    font-size: medium;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.popOver button:hover{
+    background-color: #d1cfcf;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #aaa;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+main{
+    color: black;
+}

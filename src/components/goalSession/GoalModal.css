@@ -1,0 +1,115 @@
+.goal-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.goal-modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  width: 350px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.25s ease;
+}
+
+.goal-modal h3 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.goal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.goal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.goal-item:hover {
+  background: #f0f0f0;
+}
+
+.goal-item.active {
+  border: 2px solid #ff8b8b;
+  background: #ffeaea;
+}
+
+.goal-info h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.goal-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0 6px 0;
+}
+
+.confirm-btn {
+  width: 100%;
+  background: none;
+  border: 2px solid #ff8b8b;
+  color: #ff8b8b;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.confirm-btn:hover:not(:disabled) {
+  background: #ff8b8b;
+  color: white;
+}
+
+.confirm-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+ button{
+    font-size: 1.125rem;
+    padding: .5rem 1rem;
+    text-transform: lowercase;
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 500px;
+    transition: 0.5 ease-in;
+    cursor: pointer;
+}
+
+ button:hover{
+    color: #3c3c3c;
+    background-color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

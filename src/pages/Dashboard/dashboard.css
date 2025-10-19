@@ -1,0 +1,116 @@
+.dashboard-caontainer{
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dashboard-caontainer h1, .dashboard-caontainer h3{
+    margin: 0;
+}
+
+.dashboard-container .layer1 h3 {
+  color: #525252c3;
+  transition: opacity 0.5s ease-in-out;
+  font-weight: 500;
+  z-index: 999;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+
+.layer1{
+    margin: 1px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.layer1 h1, h3{
+    margin: 0;
+}
+
+.layer2{
+    display: flex;
+    justify-content:flex-start;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+
+.left{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.layer3{
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.list-goals{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.goal-cards{
+    flex: 1 1 1;
+    border: 1px solid black;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.goal-cards:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.noteLists{
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: flex-start;
+    gap: 0%;
+    margin: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: solid 1px black;
+}
+
+.noteLists:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
